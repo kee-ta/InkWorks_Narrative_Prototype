@@ -4,11 +4,11 @@ Hello there! #speaker:Demo NPC #portrait:dr_green_neutral #layout:left #audio:an
 === main ===
 How are you feeling today?
 + [Happy]
-    That makes me feel <color=\#F8FF30>happy</color> as well! #portrait:dr_green_happy
+    That makes me feel <color=\#F8FF30>happy</color> as well! 
 + [Sad]
-    Oh, well that makes me <color=\#5B81FF>sad</color> too. #portrait:dr_green_sad
+    Oh, well that makes me <color=\#5B81FF>sad</color> too. 
     
-- Well, do you have any more questions? #speaker:Dr. Green #portrait:dr_green_neutral #layout:left #audio:animal_crossing_mid
+- Well, do you have any more questions? #speaker:Updated Npc nAME  #layout:left #audio:animal_crossing_mid
 
 + [Yes]
     -> main
