@@ -200,7 +200,7 @@ public class DialogueManager : MonoBehaviour
         foreach (char letter in line.ToCharArray())
         {
             // if the submit button is pressed, finish up displaying the line right away
-            if (Input.GetKeyDown(KeyCode.Mouse0)) 
+            if (Input.GetKey(KeyCode.Space)) // Check for continuous spacebar press
             {
                 dialogueText.maxVisibleCharacters = line.Length;
                 break;
@@ -372,8 +372,6 @@ public class DialogueManager : MonoBehaviour
         if (canContinueToNextLine) 
         {
             currentStory.ChooseChoiceIndex(choiceIndex);
-            // NOTE: The below two lines were added to fix a bug after the Youtube video was made
-            //InputManager.GetInstance().RegisterSubmitPressed(); // this is specific to my InputManager script
             ContinueStory();
         }
     }
